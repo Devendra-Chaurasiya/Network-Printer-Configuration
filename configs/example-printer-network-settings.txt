@@ -1,0 +1,31 @@
+Printer Network Settings Template
+=================================
+
+Printer Model:
+Serial Number:
+MAC Address:
+Hostname:
+
+IPv4 Configuration
+- Address mode: Static
+- IP address: 192.168.10.50
+- Subnet mask: 255.255.255.0
+- Default gateway: 192.168.10.1
+- Preferred DNS: 8.8.8.8
+- Alternate DNS: 1.1.1.1
+
+Print Protocols (enable as required)
+- RAW 9100: Enabled
+- IPP: Enabled
+- LPD: Optional
+- SNMP: Enabled
+
+Driver Information
+- Driver name/version:
+- Installation source URL:
+
+Validation
+- Ping successful from PC-01: Yes/No
+- Ping successful from PC-02: Yes/No
+- Test page from PC-01: Pass/Fail
+- Test page from PC-02: Pass/Fail

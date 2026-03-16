@@ -1,0 +1,5 @@
+Device,Role,IP Address,Subnet Mask,Gateway,DNS,Notes
+Router,Default Gateway,192.168.10.1,255.255.255.0,N/A,N/A,LAN interface
+Printer,Static Device,192.168.10.50,255.255.255.0,192.168.10.1,8.8.8.8,Exclude from DHCP pool
+PC-01,Client,192.168.10.101,255.255.255.0,192.168.10.1,8.8.8.8,Can use DHCP reservation
+PC-02,Client,192.168.10.102,255.255.255.0,192.168.10.1,8.8.8.8,Can use DHCP reservation
