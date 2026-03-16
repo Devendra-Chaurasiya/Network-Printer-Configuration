@@ -1,0 +1,21 @@
+Simulated Connectivity Output
+=============================
+
+Source: PC-01
+Command: ping -c 4 192.168.10.50
+Expected Output Summary:
+- 4 packets transmitted
+- 4 packets received
+- 0% packet loss
+- Stable latency within LAN range
+
+Source: PC-02
+Command: ping -c 4 192.168.10.50
+Expected Output Summary:
+- 4 packets transmitted
+- 4 packets received
+- 0% packet loss
+- Stable latency within LAN range
+
+Note:
+This is simulated evidence for documentation-mode submission where physical printer hardware is unavailable.

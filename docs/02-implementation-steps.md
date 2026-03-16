@@ -1,5 +1,7 @@
 # 02 - Implementation Steps
 
+If you do not have a physical printer, follow `docs/05-no-hardware-simulation.md` instead of hardware steps.
+
 ## Step 1: Physical and Network Connection
 1. Power on the printer.
 2. Connect printer to LAN using Ethernet (recommended) or configure Wi-Fi.

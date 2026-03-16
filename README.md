@@ -2,6 +2,14 @@
 
 Submission target: 17 March 2026
 
+## Implementation Mode
+This repository is designed to be completed in either mode:
+
+1. Real hardware mode (if printer is available)
+2. Simulation/documentation mode (if printer is not available)
+
+If you do not have a physical printer, use simulation mode and clearly mention this in your final report.
+
 ## Project Description
 This project configures a network printer so that multiple users on the same LAN can print reliably using TCP/IP. It demonstrates practical knowledge of:
 
@@ -24,7 +32,7 @@ After completing this project, you will be able to:
 Included:
 
 - One router/switch network
-- One network-capable printer
+- One network-capable printer (real or simulated)
 - Two or more client devices
 - IP plan, implementation steps, and test evidence template
 
@@ -63,15 +71,23 @@ Not included:
 
 Detailed instructions are in the docs folder.
 
+If no physical printer is available, use the simulation workflow in `docs/05-no-hardware-simulation.md`.
+
 ## Repository Structure
 ```text
 .
+|-- FINAL-SUBMISSION.md
 |-- README.md
 |-- docs
 |   |-- 01-project-plan.md
 |   |-- 02-implementation-steps.md
 |   |-- 03-testing-checklist.md
-|   `-- 04-troubleshooting.md
+|   |-- 04-troubleshooting.md
+|   |-- 05-no-hardware-simulation.md
+|   `-- 06-final-report-template.md
+|-- evidence
+|   |-- README.md
+|   `-- simulated-ping-results.txt
 `-- configs
 	|-- example-ip-plan.csv
 	`-- example-printer-network-settings.txt
@@ -79,16 +95,21 @@ Detailed instructions are in the docs folder.
 
 ## Execution Workflow
 1. Review project plan: `docs/01-project-plan.md`
-2. Perform setup: `docs/02-implementation-steps.md`
+2. Choose setup path:
+	- Hardware path: `docs/02-implementation-steps.md`
+	- No-hardware path: `docs/05-no-hardware-simulation.md`
 3. Validate setup: `docs/03-testing-checklist.md`
 4. Resolve issues (if any): `docs/04-troubleshooting.md`
+5. Prepare final report: `docs/06-final-report-template.md`
+6. Use ready report (optional): `FINAL-SUBMISSION.md`
 
 ## Evidence to Collect for Submission
-- Screenshots of printer network settings page
-- Ping success from at least two clients
-- Printer installed on clients
-- Successful test print page
+- Topology diagram (drawn or simulated)
+- IP plan table and chosen subnet
+- Screenshots (or simulated outputs) for connectivity checks
+- Printer installation steps and expected outcomes
 - Completed testing checklist
+- Final project report
 
 ## GitHub Upload Steps
 Use these commands in terminal from project root:
@@ -111,7 +132,9 @@ git push -u origin main
 
 ## Final Submission Checklist
 - [ ] All docs completed and reviewed
-- [ ] IP plan matches real network
-- [ ] Printer reachable from all required clients
-- [ ] Test print succeeded on all required clients
+- [ ] Simulation or hardware mode clearly stated
+- [ ] IP plan is valid and consistent
+- [ ] Connectivity validation results documented
+- [ ] Test checklist completed with remarks
+- [ ] Final report completed
 - [ ] Project pushed to GitHub before 17 March 2026
