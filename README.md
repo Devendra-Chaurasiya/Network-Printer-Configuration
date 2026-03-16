@@ -1,14 +1,12 @@
 # Network Printer Configuration
 
-Submission target: 17 March 2026
-
 ## Implementation Mode
 This repository is designed to be completed in either mode:
 
 1. Real hardware mode (if printer is available)
 2. Simulation/documentation mode (if printer is not available)
 
-If you do not have a physical printer, use simulation mode and clearly mention this in your final report.
+If you do not have a physical printer, use simulation mode and clearly mention this in your project report.
 
 ## Project Description
 This project configures a network printer so that multiple users on the same LAN can print reliably using TCP/IP. It demonstrates practical knowledge of:
@@ -89,7 +87,6 @@ python3 scripts/validate_ip_plan.py
 ## Repository Structure
 ```text
 .
-|-- FINAL-SUBMISSION.md
 |-- README.md
 |-- scripts
 |   |-- generate_simulated_evidence.py
@@ -123,21 +120,20 @@ python3 scripts/validate_ip_plan.py
 	- No-hardware path: `docs/05-no-hardware-simulation.md`
 3. Validate setup: `docs/03-testing-checklist.md`
 4. Resolve issues (if any): `docs/04-troubleshooting.md`
-5. Prepare final report: `docs/06-final-report-template.md`
-6. Use ready report (optional): `FINAL-SUBMISSION.md`
+5. Prepare project report: `docs/06-final-report-template.md`
 
-## Evidence to Collect for Submission
+## Project Evidence
 - Topology diagram (drawn or simulated)
 - IP plan table and chosen subnet
 - Screenshots (or simulated outputs) for connectivity checks
 - Printer installation steps and expected outcomes
 - Completed testing checklist
-- Final project report
+- Project report
 
 Current generated evidence is already available in `evidence/`.
 
-## GitHub Upload Steps
-Use these commands in terminal from project root:
+## Repository Sync (Optional)
+Use these commands in terminal from project root if you want to push updates:
 
 ```bash
 git init
@@ -154,12 +150,3 @@ If the remote repository already exists and has content, run:
 git pull --rebase origin main
 git push -u origin main
 ```
-
-## Final Submission Checklist
-- [x] All docs completed and reviewed
-- [x] Simulation or hardware mode clearly stated
-- [x] IP plan is valid and consistent
-- [x] Connectivity validation results documented
-- [x] Test checklist completed with remarks
-- [x] Final report completed
-- [x] Project pushed to GitHub before 17 March 2026
