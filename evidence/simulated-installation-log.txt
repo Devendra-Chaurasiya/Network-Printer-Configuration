@@ -1,0 +1,16 @@
+Simulated Printer Installation Log
+================================
+
+Windows Client (PC-01)
+- Opened Settings > Bluetooth & devices > Printers & scanners
+- Selected Add printer manually
+- Added TCP/IP printer at 192.168.10.50
+- Selected matching generic TCP/IP model in simulation
+- Status: Simulated Pass
+
+Linux Client (PC-02)
+- Accessed CUPS at http://localhost:631
+- Added printer using URI socket://192.168.10.50:9100
+- Applied model profile in simulation
+- Sent test job to queue
+- Status: Simulated Pass

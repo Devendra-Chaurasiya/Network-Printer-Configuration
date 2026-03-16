@@ -10,8 +10,19 @@ The objective of this project is to design and document a complete network print
 
 ## 2. Environment
 - Mode: Simulation/Documentation
-- Tools used: Markdown documentation, network topology planning, Linux command examples
+- Tools used: Markdown documentation, Python automation scripts, Linux command examples
 - OS used: Linux (development environment)
+
+## 2.1 Code Components Implemented
+1. `scripts/generate_simulated_evidence.py`
+    - Automatically generates simulation evidence files in `evidence/`.
+2. `scripts/validate_ip_plan.py`
+    - Validates IP/mask/gateway consistency from `configs/example-ip-plan.csv`.
+    - Produces `evidence/ip-plan-validation-report.txt`.
+
+Execution status:
+- Evidence generation: Completed
+- IP plan validation: PASS
 
 ## 3. Network Topology
 Proposed LAN topology:
@@ -45,10 +56,15 @@ Proposed LAN topology:
 ## 6. Testing Results
 | Test | Result | Evidence |
 |------|--------|----------|
-| Ping PC-01 to printer | Simulated Pass | See evidence/simulated-ping-results.txt |
-| Ping PC-02 to printer | Simulated Pass | See evidence/simulated-ping-results.txt |
-| Add printer by TCP/IP | Simulated Pass | Step validation in docs |
-| Print test page | Simulated Pass | Workflow validation in docs |
+| Ping PC-01 to printer | Simulated Pass | evidence/ping-pc01-to-printer.txt |
+| Ping PC-02 to printer | Simulated Pass | evidence/ping-pc02-to-printer.txt |
+| Add printer by TCP/IP | Simulated Pass | evidence/simulated-installation-log.txt |
+| Print test page | Simulated Pass | evidence/simulated-test-print-log.txt |
+
+Additional validation:
+- Completed test matrix: evidence/completed-test-results.md
+- IP plan validation report: evidence/ip-plan-validation-report.txt
+- Topology diagram source: evidence/topology-diagram.mmd
 
 ## 7. Issues Faced and Fixes
 Issue: No physical network printer available.

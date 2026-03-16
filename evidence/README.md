@@ -1,23 +1,22 @@
-# Evidence Folder Guide
+# Evidence Index
 
-Store your screenshots, diagrams, and proof files here.
+This folder contains completed simulation-mode evidence for the Network Printer Configuration project.
 
-## Suggested Files
-- topology-diagram.png
-- printer-ip-settings.png (or simulated equivalent)
-- ping-pc01-to-printer.png
-- ping-pc02-to-printer.png
-- printer-installation-step.png
-- test-print-proof.png (or simulation note screenshot)
+## Generated Evidence Files
+- `completed-test-results.md`: filled test matrix with simulation outcomes
+- `ip-plan-validation-report.txt`: automated IP plan validation (PASS)
+- `ping-pc01-to-printer.txt`: simulated ping output from PC-01
+- `ping-pc02-to-printer.txt`: simulated ping output from PC-02
+- `simulated-installation-log.txt`: simulated Windows/Linux printer setup log
+- `simulated-ping-results.txt`: summary ping evidence
+- `simulated-test-print-log.txt`: simulated print job completion log
+- `topology-diagram.mmd`: topology diagram in Mermaid format
 
-## Naming Convention
-Use lowercase and hyphen-separated names, for example:
+## Notes
+- All artifacts are explicitly simulation-based because physical hardware is unavailable.
+- To regenerate evidence, run:
 
-```text
-ping-pc01-to-printer.png
+```bash
+python3 scripts/generate_simulated_evidence.py
+python3 scripts/validate_ip_plan.py
 ```
-
-## If You Have No Printer
-- Add topology and ping simulation evidence.
-- Add final-report PDF/MD in repository root or docs folder.
-- Mention simulation mode clearly in report.

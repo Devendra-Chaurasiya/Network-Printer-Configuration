@@ -73,11 +73,27 @@ Detailed instructions are in the docs folder.
 
 If no physical printer is available, use the simulation workflow in `docs/05-no-hardware-simulation.md`.
 
+## Project Code (Automation)
+This project includes runnable Python scripts so the repository is not only documentation.
+
+- `scripts/generate_simulated_evidence.py`: generates simulation outputs in the `evidence` folder
+- `scripts/validate_ip_plan.py`: validates `configs/example-ip-plan.csv` and writes a validation report
+
+Run automation:
+
+```bash
+python3 scripts/generate_simulated_evidence.py
+python3 scripts/validate_ip_plan.py
+```
+
 ## Repository Structure
 ```text
 .
 |-- FINAL-SUBMISSION.md
 |-- README.md
+|-- scripts
+|   |-- generate_simulated_evidence.py
+|   `-- validate_ip_plan.py
 |-- docs
 |   |-- 01-project-plan.md
 |   |-- 02-implementation-steps.md
@@ -87,7 +103,14 @@ If no physical printer is available, use the simulation workflow in `docs/05-no-
 |   `-- 06-final-report-template.md
 |-- evidence
 |   |-- README.md
-|   `-- simulated-ping-results.txt
+|   |-- completed-test-results.md
+|   |-- ip-plan-validation-report.txt
+|   |-- ping-pc01-to-printer.txt
+|   |-- ping-pc02-to-printer.txt
+|   |-- simulated-installation-log.txt
+|   |-- simulated-ping-results.txt
+|   |-- simulated-test-print-log.txt
+|   `-- topology-diagram.mmd
 `-- configs
 	|-- example-ip-plan.csv
 	`-- example-printer-network-settings.txt
@@ -111,6 +134,8 @@ If no physical printer is available, use the simulation workflow in `docs/05-no-
 - Completed testing checklist
 - Final project report
 
+Current generated evidence is already available in `evidence/`.
+
 ## GitHub Upload Steps
 Use these commands in terminal from project root:
 
@@ -131,10 +156,10 @@ git push -u origin main
 ```
 
 ## Final Submission Checklist
-- [ ] All docs completed and reviewed
-- [ ] Simulation or hardware mode clearly stated
-- [ ] IP plan is valid and consistent
-- [ ] Connectivity validation results documented
-- [ ] Test checklist completed with remarks
-- [ ] Final report completed
-- [ ] Project pushed to GitHub before 17 March 2026
+- [x] All docs completed and reviewed
+- [x] Simulation or hardware mode clearly stated
+- [x] IP plan is valid and consistent
+- [x] Connectivity validation results documented
+- [x] Test checklist completed with remarks
+- [x] Final report completed
+- [x] Project pushed to GitHub before 17 March 2026

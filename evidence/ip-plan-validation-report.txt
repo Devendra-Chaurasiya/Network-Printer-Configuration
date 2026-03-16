@@ -1,0 +1,11 @@
+IP Plan Validation Report
+=========================
+
+Input file: /workspaces/Network-Printer-Configuration/configs/example-ip-plan.csv
+
+[OK] Router: 192.168.10.1/255.255.255.0 in network 192.168.10.0/24
+[OK] Printer: 192.168.10.50/255.255.255.0 in network 192.168.10.0/24
+[OK] PC-01: 192.168.10.101/255.255.255.0 in network 192.168.10.0/24
+[OK] PC-02: 192.168.10.102/255.255.255.0 in network 192.168.10.0/24
+
+Final status: PASS
